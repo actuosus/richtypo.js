@@ -25,7 +25,7 @@ module.exports = {
 	],
 	_spaces: [
 		// Words with hyphens
-        [/(?!<nobr>)(\W|^)((?:\w{1,2}(?:\-\w+))|(?:\w+(?:\-\w{1,2})))(?!\w)(?!<\/nobr>)/g, '$1<nobr>$2</nobr>'],  // @todo \b ?
+//        [/(?!<nobr>)(\W|^)((?:\w{1,2}(?:\-\w+))|(?:\w+(?:\-\w{1,2})))(?!\w)(?!<\/nobr>)/g, '$1<nobr>$2</nobr>'],  // @todo \b ?
 
 		// Prepositions and conjunctions
 		[new RegExp('(\\W|^)(' + _prepos + ')\\s', 'gi'), '$1$2' + _nbsp]  // @todo \b ?
